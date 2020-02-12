@@ -26,14 +26,25 @@ object Test1 {
       a + b
     }
     println(sum(3, 4))
+
+    println(add(2,3))
+
+    println(sayName())
+    println(sayName("函数的默认值"))
   }
 
   def test_1(name:String):String = {
-    return "my name is " + name
+    "my name is " + name
   }
 
+  def add(a:Int, b:Int):Int = {
+    a+b
+  }
 
-
+  //  函数的默认值
+  def sayName(name:String = "pk"):String = {
+    name
+  }
 
 
 
